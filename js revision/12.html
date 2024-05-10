@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        .bg-primary{
+            background-color: blueviolet;
+        }
+        .bg-warning{
+            background-color: rgb(81, 81, 142);
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let a=document.createElement("h1")
+        a.innerText="mohith"
+        a.setAttribute("class","bg-primary")
+        document.body.appendChild(a)
+        let b=document.createElement("h2")
+        b.innerText="mohith"
+        b.setAttribute("class","bg-warning")
+        document.body.appendChild(b)
+    </script>
+    
+</body>
+</html>

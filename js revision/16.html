@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <link rel="icon" href="js.jpg">
+    <style>
+        *{
+            margin: 0px;
+        }
+        .bg-info{
+            background-color: black;
+        }
+        .plain{
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+   
+    <script>
+       let a=parseInt(prompt("Enter a number"))
+       document.write("Given input=",a)
+       for(let i=1;i<=a;i++)
+       {
+        let b=document.createElement("h1")
+        b.innerText="CSE"
+        b.setAttribute("class","bg-info plain")
+        document.body.appendChild(b)
+       }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        bg-primary{
+            background-color: blue;
+        }
+        bg-warning{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let a=document.createElement("p")
+        let b=document.createElement("h1")
+        a.innerText="hello world hello world this is chitti robo 3.0"
+        b.innerText="Robo 3.0"
+        a.setAttribute("class","bg-primary ")
+        b.setAttribute("class","bg-warning")
+       document.body.appendChild(a)
+       document.body.appendChild(b)
+    </script>
+    
+</body>
+</html>

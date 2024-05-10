@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <link rel="icon" href="js.jpg">
+    <style>
+        *{
+            margin: 0px;
+        }
+        .h1{
+            color: red;
+            text-align: center;
+        }
+        #mytable{
+            border: solid;
+            border-collapse: collapse;
+            width: 100%;
+
+        }
+        tr,thead,td{
+            background-color: red;
+            color: white;
+            border: solid;
+            text-align: center;
+        }
+        </style>
+</head>
+<body>
+    <table id="mytable">
+        <thead>
+            <td>Eno</td>
+            <td>Ename</td>
+            <td>Esal</td>
+        </thead>
+    </table>
+    <script>
+        arr=[
+        arr=[
+            {"eno":1,"ename":"Mohith","esal":500000.00},
+            {"eno":2,"ename":"pavan","esal":500000.00},
+            {"eno":3,"ename":"dinesh","esal":500000.00}
+        ]
+        ]
+        table=document.querySelector("#mytable")
+        for(let i=0;i<arr.length;i++)
+        {
+            tr=document.createElement("tr")
+            for(let j=0;j<3;j++)
+            {
+                td=document.createElement("td")
+                if(j==0)
+                {
+                   td.innerText=arr[i].eno
+                }
+                else if(j==1)
+                {
+                    td.innerText=arr[i].ename
+                }
+                else if(j==2)
+                {
+                    td.innerText=arr[i].esal
+                }
+                tr.appendChild(td)
+            }
+            table.appendChild(tr)
+        }
+    </script>
+</body>
+</html>

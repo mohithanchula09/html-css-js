@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <link rel="icon" href="js.jpg">
+   <style>
+    *{
+        margin: 0px;
+    }
+    table{
+        width: 100%;
+    }
+    table,thead,th,td,tr{
+        border: solid;
+        background-color: red;
+        color: white;
+        text-align: center;
+    }
+   </style>
+</head>
+<body>
+    <script>
+        arr=["Eno","Ename","Esal"]
+        let div=document.createElement("div")
+        let table=document.createElement("table")
+        let thead=document.createElement("thead")
+        for(let i=0;i<3;i++)
+        {
+            let th=document.createElement("th")
+            th.innerText=arr[i]
+            thead.appendChild(th)
+        }
+        document.body.appendChild(div)
+        div.appendChild(table)
+        table.appendChild(thead)
+
+        
+        let tr1=document.createElement("tr")
+        let tr2=document.createElement("tr")
+        let td1=document.createElement("td")
+        let td2=document.createElement("td")
+        let td3=document.createElement("td")
+        let td4=document.createElement("td")
+        let td5=document.createElement("td")
+        let td6=document.createElement("td")
+        let e1={
+            "eno":1,
+            "ename":"mohith",
+            "esal":50000000.00
+        }
+        let e2={
+            "eno":2,
+            "ename":"dinesh",
+            "esal":50000000.00
+        }
+        td1.innerText=e1.eno
+        td2.innerText=e1.ename
+        td3.innerText=e1.esal
+        td4.innerText=e2.eno
+        td5.innerText=e2.ename
+        td6.innerText=e2.esal
+        tr1.appendChild(td1)
+        tr1.appendChild(td2)
+        tr1.appendChild(td3)
+      
+        tr2.appendChild(td4)
+        tr2.appendChild(td5)
+        tr2.appendChild(td6)
+       
+        table.appendChild(tr1)
+        table.appendChild(tr2)
+
+    </script>
+    
+</body>
+</html>

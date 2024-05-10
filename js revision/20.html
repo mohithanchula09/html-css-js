@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <link rel="icon" href="js.jpg">
+    <style>
+        *{
+            margin: 0px;
+        }
+        table{
+            width: 100%;
+        }
+        thead,th{
+            background-color: red;
+            border: double 1px;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center ;">Employee Details</h1>
+    <script>
+        let name=["Eno","Ename","Esal"]
+        let div=document.createElement("div")
+        let table=document.createElement("table")
+        let thead=document.createElement("thead")
+        for(let i=0;i<name.length;i++) //i=0,i=1.i=2
+        {
+            let th=document.createElement("th")
+            th.innerText=name[i]
+            thead.appendChild(th)
+        }
+        document.body.appendChild(div)
+        div.appendChild(table)
+        table.appendChild(thead)
+        
+    </script>
+    
+</body>
+</html>
